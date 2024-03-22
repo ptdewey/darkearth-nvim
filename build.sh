@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+# fix build issue when using nix
+LUA_PATH=./lush_theme/darkearth.lua
 
 nvim --headless +Shipwright +qa
 

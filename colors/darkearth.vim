@@ -189,9 +189,11 @@ hi! link @lsp.type.variable Identifier
 hi! link Macro PreProc
 hi! link markdownCodeBlock String
 hi! link markdownCodeDelimiter NonText
-hi! link markdownHeadingRule NonText
+hi! link markdownHeadingRule Special
 hi! link markdownLinkDelimiter Delimiter
 hi! link markdownURLDelimiter Delimiter
+hi! link @markup.heading Special
+hi! link @markup.list Operator
 hi! link MasonHeaderSecondary LazyButtonActive
 hi! link MasonHighlightBlockBold LazyButtonActive
 hi! link MasonHighlightBlock LazyButtonActive
