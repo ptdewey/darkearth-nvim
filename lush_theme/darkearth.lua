@@ -33,9 +33,10 @@ local theme = lush(function(injected_functions)
         MoreMsg                                    { fg=hsl(120, 17, 45), gui="bold", },
         ModeMsg                                    { gui="bold", },
         -- LineNr                                     { fg=hsl(0, 0, 40), bg=lnbg, },
-        LineNr                                     { fg=lnfg, bg=lnbg, },
-        LineNrAbove                                { LineNr },
-        LineNrBelow                                { LineNr },
+        LineNr                                     { fg=hsl(71, 27, 40), bg=lnbg, },
+        DefLineNr                                  { fg=lnfg, bg=lnbg, },
+        LineNrAbove                                { DefLineNr },
+        LineNrBelow                                { DefLineNr },
         CursorLineNr                               { fg=hsl(71, 27, 40), gui="bold", bg=lnbg, },
         FzfLuaCursorLineNr                         { CursorLineNr },
         Question                                   { fg=hsl(120, 17, 45), gui="bold", },
@@ -43,7 +44,7 @@ local theme = lush(function(injected_functions)
         MsgSeparator                               { StatusLine },
         -- StatusLineNC                               { fg=hsl(0, 0, 40), gui="bold", bg=bgc, },
         StatusLineNC                               { fg=lnfg, gui="bold", bg=bgc, },
-        Ignore                                     { fg=hsl(0, 0, 27), },
+        Ignore                                     { fg=hsl(20, 5, 27), },
         VertSplit                                  { fg=lnbg, bg=bgc, },
         WinSeparator                               { VertSplit },
         Title                                      { fg=hsl(22, 46, 48), gui="bold", },
@@ -65,7 +66,7 @@ local theme = lush(function(injected_functions)
         DiffDelete                                 { fg=hsl(0, 0, 13), gui="bold", bg=hsl(22, 46, 48), },
         sym"@text.diff.delete"                     { DiffDelete },
         DiffText                                   { fg=hsl(0, 0, 13), gui="bold", bg=hsl(42, 52, 56), },
-        SignColumn                                 { fg=hsl(0, 0, 40), bg=lnbg },
+        SignColumn                                 { fg=hsl(20, 5, 40), bg=lnbg },
         CursorLineSign                             { SignColumn },
         Conceal                                    { Ignore },
         SpellBad                                   { fg=hsl(33, 22, 33), sp=hsl(46, 51, 68), },
@@ -79,11 +80,11 @@ local theme = lush(function(injected_functions)
         PmenuSel                                   { fg=hsl(0, 0, 13), bg=hsl(72, 27, 40), },
         PmenuKindSel                               { PmenuSel },
         PmenuExtraSel                              { PmenuSel },
-        PmenuSbar                                  { bg=hsl(0, 0, 40), },
+        PmenuSbar                                  { bg=hsl(20, 5, 40), },
         FzfLuaScrollFloatEmpty                     { PmenuSbar },
         PmenuThumb                                 { fg=hsl(46, 51, 68), bg=hsl(46, 51, 68), },
         FzfLuaScrollFloatFull                      { PmenuThumb },
-        TabLine                                    { fg=hsl(0, 0, 40), bg=hsl(0, 0, 7), },
+        TabLine                                    { fg=hsl(20, 5, 40), bg=hsl(0, 0, 7), },
         TabLineSep                                 { fg=hsl(0, 0, 7), bg=bgc, },
         TabLineSelSep                              { fg=hsl(72, 27, 40), gui="bold", bg=lnbg, },
         TabLineSel                                 { bg=hsl(72, 27, 40), gui="bold", fg=hsl(0, 0, 7), },
@@ -126,7 +127,7 @@ local theme = lush(function(injected_functions)
         sym"@lsp.type.enumMember"                  { Constant },
         rubyConstant                               { Constant },
         vimHiAttrib                                { Constant },
-        -- Number                                     { fg=hsl(71, 27, 40), }, -- NOTE: changed away from this
+        -- Number                                     { fg=hsl(71, 27, 40), }, -- NOTE: original
         -- Number                                     { fg=hsl(60, 20, 50), },
         -- Number                                     { fg=hsl(40, 55, 60), },
         -- Number                                     { fg=hsl(25, 70, 60), },
@@ -149,7 +150,7 @@ local theme = lush(function(injected_functions)
         sym"@text.reference"                       { Identifier },
         sym"@parameter"                            { Identifier },
         -- Field                                      { fg=hsl(80, 30, 40), }, -- NOTE: changed from Identifier
-        -- Field                                      { fg=hsl(140, 20, 50), }, -- NOTE: custom def
+        -- Field                                      { fg=hsl(140, 20, 50), }, 
         Field                                      { fg=hsl(26, 47, 50), },
         sym"@field"                                { Field }, -- NOTE: changed from Identifier
         sym"@property"                             { Field }, -- NOTE: changed from Identifier
@@ -177,7 +178,7 @@ local theme = lush(function(injected_functions)
         Macro                                      { PreProc },
         PreCondit                                  { PreProc },
         sym"@preproc"                              { PreProc },
-        Type                                       { fg=hsl(72, 27, 40), }, -- NOTE: removed gui="bold"
+        Type                                       { fg=hsl(72, 27, 40), },
         StorageClass                               { Type },
         Structure                                  { Type },
         Typedef                                    { Type },
@@ -238,8 +239,8 @@ local theme = lush(function(injected_functions)
         DiagnosticSignInfo                         { fg=hsl(71, 27, 40), bg=lnbg, },
         DiagnosticSignHint                         { fg=hsl(120, 17, 45), bg=lnbg, },
         DiagnosticDeprecated                       { gui="strikethrough", sp=hsl(33, 22, 33), },
-        DiagnosticUnnecessary                      { fg=hsl(0, 0, 40), },
-        Comment                                    { fg=hsl(20, 5, 40), gui="italic", }, -- NOTE: changed l from 40, italic, s 0, h 0
+        DiagnosticUnnecessary                      { fg=hsl(20, 5, 40), },
+        Comment                                    { fg=hsl(30, 8, 40), gui="italic", }, -- NOTE: changed l from 40, italic, s 0, h 0
         sym"@text.literal"                         { Comment },
         sym"@comment"                              { Comment },
         sym"@lsp.type.comment"                     { Comment },

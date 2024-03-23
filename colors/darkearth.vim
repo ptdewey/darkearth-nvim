@@ -9,12 +9,13 @@ let colors_name="darkearth"
 let g:colors_name="darkearth"
 
 hi ColorColumn guifg=NONE guibg=#24211E guisp=NONE blend=NONE gui=NONE
-hi Comment guifg=#6B6461 guibg=NONE guisp=NONE blend=NONE gui=italic
+hi Comment guifg=#6E665E guibg=NONE guisp=NONE blend=NONE gui=italic
 hi Constant guifg=#BB7844 guibg=NONE guisp=NONE blend=NONE gui=NONE
 hi CursorColumn guifg=NONE guibg=#221F1C guisp=NONE blend=NONE gui=NONE
 hi Cursor guifg=#212121 guibg=#675642 guisp=NONE blend=NONE gui=NONE
 hi CursorLine guifg=NONE guibg=#221F1C guisp=NONE blend=NONE gui=NONE
 hi CursorLineNr guifg=#77824A guibg=#221F1C guisp=NONE blend=NONE gui=bold
+hi DefLineNr guifg=#736659 guibg=#221F1C guisp=NONE blend=NONE gui=NONE
 hi Delimiter guifg=#80744D guibg=NONE guisp=NONE blend=NONE gui=NONE
 hi DelimiterLight guifg=#D7C484 guibg=NONE guisp=NONE blend=NONE gui=NONE
 hi DiagnosticDeprecated guifg=NONE guibg=NONE guisp=#675642 blend=NONE gui=strikethrough
@@ -32,7 +33,7 @@ hi DiagnosticUnderlineHint guifg=NONE guibg=NONE guisp=NONE blend=NONE gui=under
 hi DiagnosticUnderlineInfo guifg=NONE guibg=NONE guisp=NONE blend=NONE gui=underline
 hi DiagnosticUnderlineOk guifg=NONE guibg=NONE guisp=NONE blend=NONE gui=underline
 hi DiagnosticUnderlineWarn guifg=NONE guibg=NONE guisp=NONE blend=NONE gui=underline
-hi DiagnosticUnnecessary guifg=#666666 guibg=NONE guisp=NONE blend=NONE gui=NONE
+hi DiagnosticUnnecessary guifg=#6B6461 guibg=NONE guisp=NONE blend=NONE gui=NONE
 hi DiagnosticVirtualTextError guifg=#B36B42 guibg=NONE guisp=NONE blend=NONE gui=NONE
 hi DiagnosticVirtualTextHint guifg=#77824A guibg=#24211E guisp=NONE blend=NONE gui=NONE
 hi DiagnosticVirtualTextInfo guifg=#77824A guibg=#24211E guisp=NONE blend=NONE gui=NONE
@@ -79,7 +80,7 @@ hi IblIndent guifg=#252F1E guibg=NONE guisp=NONE blend=NONE gui=nocombine
 hi IblScope guifg=#444A2B guibg=NONE guisp=NONE blend=NONE gui=nocombine
 hi IblWhitespace guifg=#252F1E guibg=NONE guisp=NONE blend=NONE gui=nocombine
 hi Identifier guifg=#D7C484 guibg=NONE guisp=NONE blend=NONE gui=NONE
-hi Ignore guifg=#454545 guibg=NONE guisp=NONE blend=NONE gui=NONE
+hi Ignore guifg=#484441 guibg=NONE guisp=NONE blend=NONE gui=NONE
 hi IncSearch guifg=#212121 guibg=#BB7844 guisp=NONE blend=NONE gui=NONE
 hi Keyword guifg=#5F865F guibg=NONE guisp=NONE blend=NONE gui=NONE
 hi LazyButtonActive guifg=#212121 guibg=#77824A guisp=NONE blend=NONE gui=NONE
@@ -115,7 +116,7 @@ hi LazyUrl guifg=NONE guibg=NONE guisp=NONE blend=NONE gui=NONE
 hi LazyValue guifg=NONE guibg=NONE guisp=NONE blend=NONE gui=NONE
 hi lCursor guifg=bg guibg=fg guisp=NONE blend=NONE gui=NONE
 hi lessVariable guifg=#B36B42 guibg=NONE guisp=NONE blend=NONE gui=NONE
-hi LineNr guifg=#736659 guibg=#221F1C guisp=NONE blend=NONE gui=NONE
+hi LineNr guifg=#77824A guibg=#221F1C guisp=NONE blend=NONE gui=NONE
 hi! link @boolean Boolean
 hi! link Boolean Number
 hi! link Character Constant
@@ -174,8 +175,8 @@ hi! link javaScript Normal
 hi! link @keyword Keyword
 hi! link Label Statement
 hi! link lessVariableValue Normal
-hi! link LineNrAbove LineNr
-hi! link LineNrBelow LineNr
+hi! link LineNrAbove DefLineNr
+hi! link LineNrBelow DefLineNr
 hi! link LspCodeLens Comment
 hi! link @lsp.type.comment Comment
 hi! link @lsp.type.decorator Function
@@ -189,7 +190,7 @@ hi! link @lsp.type.variable Identifier
 hi! link Macro PreProc
 hi! link markdownCodeBlock String
 hi! link markdownCodeDelimiter NonText
-hi! link markdownHeadingRule Special
+hi! link markdownHeadingRule NonText
 hi! link markdownLinkDelimiter Delimiter
 hi! link markdownURLDelimiter Delimiter
 hi! link @markup.heading Special
@@ -310,7 +311,7 @@ hi mustacheVariable guifg=#C9A654 guibg=NONE guisp=NONE blend=NONE gui=NONE
 hi mustacheVariableUnescape guifg=#675642 guibg=NONE guisp=NONE blend=NONE gui=NONE
 hi netrwClassify guifg=#666666 guibg=NONE guisp=NONE blend=NONE gui=bold
 hi netrwExe guifg=#675642 guibg=NONE guisp=NONE blend=NONE gui=NONE
-hi NonText guifg=#666666 guibg=NONE guisp=NONE blend=NONE gui=bold
+hi NonText guifg=#7A6D52 guibg=NONE guisp=NONE blend=NONE gui=bold
 hi Normal guifg=#D7C484 guibg=#24211E guisp=NONE blend=NONE gui=NONE
 hi Number guifg=#B3664D guibg=NONE guisp=NONE blend=NONE gui=NONE
 hi NvimInternalError guifg=#221F1C guibg=#B36B42 guisp=NONE blend=NONE gui=NONE
@@ -318,7 +319,7 @@ hi Operator guifg=#669977 guibg=NONE guisp=NONE blend=NONE gui=NONE
 hi phpIdentifier guifg=#B36B42 guibg=NONE guisp=NONE blend=NONE gui=NONE
 hi phpSpecialFunction guifg=#BB7844 guibg=NONE guisp=NONE blend=NONE gui=NONE
 hi Pmenu guifg=#D7C484 guibg=#221F1C guisp=NONE blend=NONE gui=NONE
-hi PmenuSbar guifg=NONE guibg=#666666 guisp=NONE blend=NONE gui=NONE
+hi PmenuSbar guifg=NONE guibg=#6B6461 guisp=NONE blend=NONE gui=NONE
 hi PmenuSel guifg=#212121 guibg=#77824A guisp=NONE blend=NONE gui=NONE
 hi PmenuThumb guifg=#D7C484 guibg=#D7C484 guisp=NONE blend=NONE gui=NONE
 hi Question guifg=#5F865F guibg=NONE guisp=NONE blend=NONE gui=bold
@@ -349,7 +350,7 @@ hi ScrollbarWarn guifg=#B36B42 guibg=NONE guisp=NONE blend=NONE gui=NONE
 hi ScrollbarWarnHandle guifg=#B36B42 guibg=#221F1C guisp=NONE blend=0 gui=NONE
 hi Search guifg=#212121 guibg=#5F865F guisp=NONE blend=NONE gui=NONE
 hi shDerefSimple guifg=#B36B42 guibg=NONE guisp=NONE blend=NONE gui=NONE
-hi SignColumn guifg=#666666 guibg=#221F1C guisp=NONE blend=NONE gui=NONE
+hi SignColumn guifg=#6B6461 guibg=#221F1C guisp=NONE blend=NONE gui=NONE
 hi Special guifg=#BB7844 guibg=NONE guisp=NONE blend=NONE gui=NONE
 hi SpecialKey guifg=#D7C484 guibg=NONE guisp=NONE blend=NONE gui=NONE
 hi SpellBad guifg=#675642 guibg=NONE guisp=#D7C484 blend=NONE gui=NONE
@@ -363,7 +364,7 @@ hi String guifg=#B3854D guibg=NONE guisp=NONE blend=NONE gui=NONE
 hi SyntasticErrorSign guifg=#B36B42 guibg=NONE guisp=NONE blend=NONE gui=NONE
 hi SyntasticWarningSign guifg=#675642 guibg=NONE guisp=NONE blend=NONE gui=NONE
 hi TabLineFill guifg=#C9A654 guibg=#24211E guisp=NONE blend=NONE gui=NONE
-hi TabLine guifg=#666666 guibg=#121212 guisp=NONE blend=NONE gui=NONE
+hi TabLine guifg=#6B6461 guibg=#121212 guisp=NONE blend=NONE gui=NONE
 hi TabLineSel guifg=#121212 guibg=#77824A guisp=NONE blend=NONE gui=bold
 hi TabLineSelSep guifg=#77824A guibg=#221F1C guisp=NONE blend=NONE gui=bold
 hi TabLineSep guifg=#121212 guibg=#24211E guisp=NONE blend=NONE gui=NONE
