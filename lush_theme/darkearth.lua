@@ -254,6 +254,8 @@ local theme = lush(function(injected_functions)
         sym"@markup.link"                          { fg=hsl(72, 27, 40), },
         sym"@markup.list"                          { Operator },
         sym"@markup.heading"                       { Special },
+        sym"@marup.raw.block.markdown"             { Special }
+        sym"@html.comment"                         { Comment }
         htmlLink                                   { Underlined },
         helpHyperTextJump                          { Underlined },
         helpURL                                    { Underlined },
