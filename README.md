@@ -3,7 +3,7 @@ An dark and earthy colorscheme for Neovim.
 
 Based on [miasma.nvim](https://github.com/xero/miasma.nvim), and built with [lush](https://github.com/rktjmp/lush.nvim).
 
-![](assets/screenshot-1.png)
+![](assets/screenshot-0.png)
 
 ## Installation
 
