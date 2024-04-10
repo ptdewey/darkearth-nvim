@@ -1,5 +1,5 @@
 # darkearth-nvim
-An dark and earthy colorscheme for Neovim.
+A dark and earthy colorscheme for Neovim.
 
 Based on [miasma.nvim](https://github.com/xero/miasma.nvim), and built with [lush](https://github.com/rktjmp/lush.nvim).
 
