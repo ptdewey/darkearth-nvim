@@ -167,6 +167,7 @@ hi! link helpHyperTextEntry Statement
 hi! link helpHyperTextJump Underlined
 hi! link helpSectionDelim Comment
 hi! link helpURL Underlined
+hi! link @html.comment Comment
 hi! link htmlEndTag htmlTag
 hi! link htmlLink Underlined
 hi! link Include PreProc
@@ -195,6 +196,7 @@ hi! link markdownLinkDelimiter Delimiter
 hi! link markdownURLDelimiter Delimiter
 hi! link @markup.heading Special
 hi! link @markup.list Operator
+hi! link @marup.raw.block.markdown Special
 hi! link MasonHeaderSecondary LazyButtonActive
 hi! link MasonHighlightBlockBold LazyButtonActive
 hi! link MasonHighlightBlock LazyButtonActive
@@ -322,6 +324,7 @@ hi Pmenu guifg=#D7C484 guibg=#221F1C guisp=NONE blend=NONE gui=NONE
 hi PmenuSbar guifg=NONE guibg=#6B6461 guisp=NONE blend=NONE gui=NONE
 hi PmenuSel guifg=#212121 guibg=#77824A guisp=NONE blend=NONE gui=NONE
 hi PmenuThumb guifg=#D7C484 guibg=#D7C484 guisp=NONE blend=NONE gui=NONE
+hi @punctuation.special guifg=#77824A guibg=NONE guisp=NONE blend=NONE gui=NONE
 hi Question guifg=#5F865F guibg=NONE guisp=NONE blend=NONE gui=bold
 hi RedrawDebugClear guifg=#212121 guibg=#C9A654 guisp=NONE blend=NONE gui=NONE
 hi RedrawDebugComposed guifg=#212121 guibg=#77824A guisp=NONE blend=NONE gui=NONE

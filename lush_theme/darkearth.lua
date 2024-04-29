@@ -150,7 +150,7 @@ local theme = lush(function(injected_functions)
         sym"@text.reference"                       { Identifier },
         sym"@parameter"                            { Identifier },
         -- Field                                      { fg=hsl(80, 30, 40), }, -- NOTE: changed from Identifier
-        -- Field                                      { fg=hsl(140, 20, 50), }, 
+        -- Field                                      { fg=hsl(140, 20, 50), },
         Field                                      { fg=hsl(26, 47, 50), },
         sym"@field"                                { Field }, -- NOTE: changed from Identifier
         sym"@property"                             { Field }, -- NOTE: changed from Identifier
@@ -254,8 +254,9 @@ local theme = lush(function(injected_functions)
         sym"@markup.link"                          { fg=hsl(72, 27, 40), },
         sym"@markup.list"                          { Operator },
         sym"@markup.heading"                       { Special },
-        sym"@marup.raw.block.markdown"             { Special }
-        sym"@html.comment"                         { Comment }
+        sym"@marup.raw.block.markdown"             { Special },
+        sym"@punctuation.special"                  { fg=hsl(72, 27, 40) },
+        sym"@html.comment"                         { Comment },
         htmlLink                                   { Underlined },
         helpHyperTextJump                          { Underlined },
         helpURL                                    { Underlined },
