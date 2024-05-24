@@ -33,5 +33,10 @@ vim.cmd.colorscheme("darkearth")
 2. Add new modifications to [lush_theme/darkearth.lua](lush_theme/darkearth.lua)
 3. Rebuild the colorscheme by running `./build.sh`
 
+
+## base16 Colorscheme
+I have also included a base16 colorscheme script [base16-darkearth.sh](base16-darkearth.sh) that can be used to set shell colors.
+
+
 ## Disclaimer
 This color scheme is fairly early in development and things are subject to change. (Changes will primarily be new additions)
