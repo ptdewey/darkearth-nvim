@@ -120,6 +120,17 @@ hi LineNr guifg=#77824A guibg=#221F1C guisp=NONE blend=NONE gui=NONE
 hi! link @boolean Boolean
 hi! link Boolean Number
 hi! link Character Constant
+hi! link CmpItemAbbrDeprecated DiagnosticWarn
+hi! link CmpItemAbbrMatchFuzzy String
+hi! link CmpItemAbbrMatch String
+hi! link CmpItemKindFunction Function
+hi! link CmpItemKindInterface Type
+hi! link CmpItemKindKeyword Keyword
+hi! link CmpItemKindMethod Function
+hi! link CmpItemKindProperty Field
+hi! link CmpItemKindText Normal
+hi! link CmpItemKindUnit Keyword
+hi! link CmpItemKindVariable Normal
 hi! link @comment Comment
 hi! link Conceal Ignore
 hi! link Conditional Statement

@@ -458,6 +458,17 @@ local theme = lush(function(injected_functions)
         TelescopeResultsSpecialComment             { },
         TelescopeResultsComment                    { },
         TelescopeResultsNumber                     { },
+        CmpItemAbbrDeprecated                      { DiagnosticWarn },
+        CmpItemAbbrMatch                           { String },
+        CmpItemAbbrMatchFuzzy                      { String },
+        CmpItemKindVariable                        { Normal },
+        CmpItemKindInterface                       { Type },
+        CmpItemKindText                            { Normal },
+        CmpItemKindFunction                        { Function },
+        CmpItemKindMethod                          { Function },
+        CmpItemKindKeyword                         { Keyword },
+        CmpItemKindProperty                        { Field },
+        CmpItemKindUnit                            { Keyword },
     }
 end)
 ---@diagnostic disable
