@@ -1,6 +1,8 @@
-# darkearth-nvim
+<h1 align="center">DarkEarth Neovim</h1>
 
-A dark and earthy colorscheme for Neovim.
+<p align="center">
+    A dark and earthy colorscheme for Neovim.
+</p>
 
 <p align="center">
     <img src="assets/color_bar.png" alt="DarkEarth palette"/>
@@ -38,14 +40,14 @@ use {
 vim.cmd.colorscheme("darkearth")
 ```
 
-## Build and Modify Colorscheme
+## Build or Modify
 
 1. Ensure [lush.nvim](https://github.com/rktjmp/lush.nvim) and [shipwright.nvim](https://github.com/rktjmp/shipwright.nvim) are installed
 2. Add new modifications to [lush_theme/darkearth.lua](lush_theme/darkearth.lua)
-3. Rebuild the colorscheme using `./build/build.sh`
+3. Rebuild the colorscheme using `./build.sh`
 
 
-## Base16 Colorscheme
+## Extras
 
 I have also included a base16 colorscheme script [extras/base16-darkearth.sh](extras/base16-darkearth.sh) that can be used to set shell colors.
 
