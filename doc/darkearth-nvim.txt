@@ -3,24 +3,17 @@
 ==============================================================================
 Table of Contents                           *darkearth-nvim-table-of-contents*
 
-1. darkearth-nvim                              |darkearth-nvim-darkearth-nvim|
-  - Installation                  |darkearth-nvim-darkearth-nvim-installation|
-  - Usage                                |darkearth-nvim-darkearth-nvim-usage|
-  - Build and Modify Colorscheme|darkearth-nvim-darkearth-nvim-build-and-modify-colorscheme|
-  - Base16 Colorscheme      |darkearth-nvim-darkearth-nvim-base16-colorscheme|
-
-==============================================================================
-1. darkearth-nvim                              *darkearth-nvim-darkearth-nvim*
-
-A dark and earthy colorscheme for Neovim.
-
-Based on miasma.nvim <https://github.com/xero/miasma.nvim>, and built with lush
+  - Installation                                 |darkearth-nvim-installation|
+  - Usage                                               |darkearth-nvim-usage|
+  - Build or Modify                           |darkearth-nvim-build-or-modify|
+  - Extras                                             |darkearth-nvim-extras|
+DarkEarth NeovimA dark and earthy colorscheme for Neovim.Based on miasma.nvim <https://github.com/xero/miasma.nvim>, and built with lush
 <https://github.com/rktjmp/lush.nvim>. Compare to Miasma, darkearth is built to
 be more colorful overall to reduce sameyness as well as being more centered
 around browns than grays to enhance the earthiness.
 
 
-INSTALLATION                      *darkearth-nvim-darkearth-nvim-installation*
+INSTALLATION                                     *darkearth-nvim-installation*
 
 Lazy:
 
@@ -40,7 +33,7 @@ Packer:
 <
 
 
-USAGE                                    *darkearth-nvim-darkearth-nvim-usage*
+USAGE                                                   *darkearth-nvim-usage*
 
 >lua
     -- enable the colorscheme
@@ -48,14 +41,14 @@ USAGE                                    *darkearth-nvim-darkearth-nvim-usage*
 <
 
 
-BUILD AND MODIFY COLORSCHEME*darkearth-nvim-darkearth-nvim-build-and-modify-colorscheme*
+BUILD OR MODIFY                               *darkearth-nvim-build-or-modify*
 
 1. Ensure lush.nvim <https://github.com/rktjmp/lush.nvim> and shipwright.nvim <https://github.com/rktjmp/shipwright.nvim> are installed
 2. Add new modifications to lush_theme/darkearth.lua <lush_theme/darkearth.lua>
-3. Rebuild the colorscheme using `./build/build.sh`
+3. Rebuild the colorscheme using `./build.sh`
 
 
-BASE16 COLORSCHEME          *darkearth-nvim-darkearth-nvim-base16-colorscheme*
+EXTRAS                                                 *darkearth-nvim-extras*
 
 I have also included a base16 colorscheme script extras/base16-darkearth.sh
 <extras/base16-darkearth.sh> that can be used to set shell colors.
