@@ -9,7 +9,7 @@
 </p>
 
 Based on [miasma.nvim](https://github.com/xero/miasma.nvim), and built with [lush](https://github.com/rktjmp/lush.nvim).
-Compare to Miasma, darkearth is built to be more colorful overall to reduce sameyness as well as being more centered around browns than grays to enhance the earthiness.
+Compared to Miasma, darkearth is built to be more colorful overall to reduce sameyness as well as being more centered around browns than grays to enhance the earthiness.
 
 <p align="center">
     <img src="assets/screenshot-0.png" alt="DarkEarth theme in neovim"/>
