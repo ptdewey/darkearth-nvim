@@ -16,7 +16,7 @@ base09="C9/A6/54" # main yellow
 base0A="5F/86/5F" # main teal
 base0B="AC/98/7D" # darker tan - new
 base0C="8A/7A/6B" # ligher grey-brown - new
-base0D="77/82/4A"   # NOTE: duplicate, can be modified
+base0D="b3/66/4d"  # main red
 base0E="BB/78/44"   # NOTE: duplicate, can be modified
 base0F="67/56/42" # darker brown (similar to alt background)
 

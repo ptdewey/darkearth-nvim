@@ -12,7 +12,6 @@ local lnfg = hsl(30, 13, 40)
 local theme = lush(function(injected_functions)
     local sym = injected_functions.sym
     return {
-        -- Normal                                     { fg=hsl(46, 51, 68), bg=hsl(0, 0, 13), }, -- NOTE: original
         Normal                                     { fg=hsl(46, 51, 68), bg=bgc, },
         SpecialKey                                 { fg=hsl(46, 51, 68), },
         TermCursor                                 { gui="reverse", },
@@ -32,7 +31,6 @@ local theme = lush(function(injected_functions)
         Substitute                                 { Search },
         MoreMsg                                    { fg=hsl(120, 17, 45), gui="bold", },
         ModeMsg                                    { gui="bold", },
-        -- LineNr                                     { fg=hsl(0, 0, 40), bg=lnbg, },
         LineNr                                     { fg=hsl(71, 27, 40), bg=lnbg, },
         DefLineNr                                  { fg=lnfg, bg=lnbg, },
         LineNrAbove                                { DefLineNr },
@@ -42,7 +40,6 @@ local theme = lush(function(injected_functions)
         Question                                   { fg=hsl(120, 17, 45), gui="bold", },
         StatusLine                                 { fg=hsl(46, 51, 68), gui="bold", bg=bgc, },
         MsgSeparator                               { StatusLine },
-        -- StatusLineNC                               { fg=hsl(0, 0, 40), gui="bold", bg=bgc, },
         StatusLineNC                               { fg=lnfg, gui="bold", bg=bgc, },
         Ignore                                     { fg=hsl(20, 5, 27), },
         VertSplit                                  { fg=lnbg, bg=bgc, },
@@ -113,7 +110,7 @@ local theme = lush(function(injected_functions)
         NvimInvalid                                { Error },
         Todo                                       { fg=hsl(46, 51, 68), gui="bold", },
         sym"@text.todo"                            { Todo },
-        String                                     { fg=hsl(33, 40, 50), }, -- NOTE: changed l from 33, s from 22
+        String                                     { fg=hsl(33, 40, 50), },
         sym"@string"                               { String },
         NvimString                                 { String },
         phpHereDoc                                 { String },
@@ -130,14 +127,12 @@ local theme = lush(function(injected_functions)
         -- Number                                     { fg=hsl(71, 27, 40), }, -- NOTE: original
         -- Number                                     { fg=hsl(60, 20, 50), },
         -- Number                                     { fg=hsl(40, 55, 60), },
-        -- Number                                     { fg=hsl(25, 70, 60), },
         -- Number                                     { fg=hsl(300, 10, 55), },
         Number                                     { fg=hsl(15, 40, 50), },
         Float                                      { Number },
         sym"@number"                               { Number },
         NvimNumber                                 { Number },
         rubyInstanceVariable                       { Number },
-        -- Boolean                                    { fg=hsl(72, 27, 40), },
         Boolean                                    { Number },
         sym"@boolean"                              { Boolean },
         Function                                   { fg=hsl(72, 27, 40), },
@@ -149,11 +144,9 @@ local theme = lush(function(injected_functions)
         Identifier                                 { fg=hsl(46, 51, 68), },
         sym"@text.reference"                       { Identifier },
         sym"@parameter"                            { Identifier },
-        -- Field                                      { fg=hsl(80, 30, 40), }, -- NOTE: changed from Identifier
-        -- Field                                      { fg=hsl(140, 20, 50), },
         Field                                      { fg=hsl(26, 47, 50), },
-        sym"@field"                                { Field }, -- NOTE: changed from Identifier
-        sym"@property"                             { Field }, -- NOTE: changed from Identifier
+        sym"@field"                                { Field },
+        sym"@property"                             { Field },
         sym"@variable"                             { Identifier },
         sym"@namespace"                            { Identifier },
         sym"@lsp.type.parameter"                   { Identifier },
@@ -170,7 +163,6 @@ local theme = lush(function(injected_functions)
         phpDefine                                  { Statement },
         helpHyperTextEntry                         { Statement },
         Keyword                                    { fg=hsl(120, 17, 45), },
-        -- Keyword                                    { fg=hsl(30, 45, 60), },
         sym"@keyword"                              { Keyword },
         PreProc                                    { Keyword },
         Include                                    { PreProc },
@@ -192,16 +184,15 @@ local theme = lush(function(injected_functions)
         SpecialComment                             { Special },
         Debug                                      { Special },
         sym"@constant.builtin"                     { Special },
-        sym"@function.builtin"                     { Function }, -- NOTE: changed from Special (maybe change to function)
+        sym"@function.builtin"                     { Function },
         sym"@constructor"                          { Special },
         TelescopeMatching                          { Special },
         TelescopeResultsFileIcon                   { Special },
         Delimiter                                  { fg=hsl(46, 25, 40), },
-        DelimiterLight                             { fg=hsl(46, 51, 68), }, -- NOTE: custom color
-        Operator                                   { fg=hsl(140, 20, 50), }, -- NOTE: changed from Delimiter
-        -- Operator                                   { fg=hsl(28, 60, 50), },
+        DelimiterLight                             { fg=hsl(46, 51, 68), },
+        Operator                                   { fg=hsl(140, 20, 50), },
         sym"@punctuation"                          { Delimiter },
-        sym"@punctuation.bracket"                  { DelimiterLight }, -- NOTE: custom definition
+        sym"@punctuation.bracket"                  { DelimiterLight },
         MyParentheses                              { Delimiter },
         NvimParenthesis                            { Delimiter },
         NvimColon                                  { Delimiter },
@@ -240,7 +231,7 @@ local theme = lush(function(injected_functions)
         DiagnosticSignHint                         { fg=hsl(120, 17, 45), bg=lnbg, },
         DiagnosticDeprecated                       { gui="strikethrough", sp=hsl(33, 22, 33), },
         DiagnosticUnnecessary                      { fg=hsl(20, 5, 40), },
-        Comment                                    { fg=hsl(30, 8, 40), gui="italic", }, -- NOTE: changed l from 40, italic, s 0, h 0
+        Comment                                    { fg=hsl(30, 8, 40), gui="italic", },
         sym"@text.literal"                         { Comment },
         sym"@comment"                              { Comment },
         sym"@lsp.type.comment"                     { Comment },
