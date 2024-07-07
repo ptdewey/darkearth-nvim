@@ -1,4 +1,4 @@
-*darkearth-nvim.txt*       For Neovim >= 0.7.0       Last change: 2024 July 06
+*darkearth-nvim.txt*       For Neovim >= 0.7.0       Last change: 2024 July 07
 
 ==============================================================================
 Table of Contents                           *darkearth-nvim-table-of-contents*
@@ -7,10 +7,9 @@ Table of Contents                           *darkearth-nvim-table-of-contents*
   - Usage                                               |darkearth-nvim-usage|
   - Build or Modify                           |darkearth-nvim-build-or-modify|
   - Extras                                             |darkearth-nvim-extras|
-DarkEarth NeovimA dark and earthy colorscheme for Neovim.Based on miasma.nvim <https://github.com/xero/miasma.nvim>, and built with lush
-<https://github.com/rktjmp/lush.nvim>. Compared to Miasma, darkearth is built
-to be more colorful overall to reduce sameyness as well as being more centered
-around browns than grays to enhance the earthiness.
+DarkEarthA dark and earthy colorscheme for Neovim.Based on miasma.nvim <https://github.com/xero/miasma.nvim>, but reimagined with
+earthier tones and more colorful syntax elements. Built with lush
+<https://github.com/rktjmp/lush.nvim>.
 
 
 INSTALLATION                                     *darkearth-nvim-installation*
@@ -36,7 +35,6 @@ Packer:
 USAGE                                                   *darkearth-nvim-usage*
 
 >lua
-    -- enable the colorscheme
     vim.cmd.colorscheme("darkearth")
 <
 
@@ -44,7 +42,7 @@ USAGE                                                   *darkearth-nvim-usage*
 BUILD OR MODIFY                               *darkearth-nvim-build-or-modify*
 
 1. Ensure lush.nvim <https://github.com/rktjmp/lush.nvim> and shipwright.nvim <https://github.com/rktjmp/shipwright.nvim> are installed
-2. Add new modifications to lush_theme/darkearth.lua <lush_theme/darkearth.lua>
+2. Modify lush_theme/darkearth.lua <lush_theme/darkearth.lua>
 3. Rebuild the colorscheme using `./build.sh`
 
 
