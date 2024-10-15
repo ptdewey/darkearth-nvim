@@ -1,4 +1,4 @@
-*darkearth-nvim.txt*     For Neovim >= 0.7.0    Last change: 2024 September 06
+*darkearth-nvim.txt*      For Neovim >= 0.7.0     Last change: 2024 October 15
 
 ==============================================================================
 Table of Contents                           *darkearth-nvim-table-of-contents*
