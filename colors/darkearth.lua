@@ -1,8 +1,8 @@
 -- colors/colorscheme.lua
 
 local colors = {
--- content here will not be touched
--- PATCH_OPEN
+    -- content here will not be touched
+    -- PATCH_OPEN
 Normal = {fg = "#D7C484", bg = "#24211E"},
 CmpItemKindText = {link = "Normal"},
 CmpItemKindVariable = {link = "Normal"},
@@ -180,10 +180,10 @@ LazyValue = {},
 LineNr = {fg = "#77824A", bg = "#221F1C"},
 LspBorderBG = {fg = "#675642", bg = "#24211E"},
 LspFloatWinNormal = {fg = "#D7C484", bg = "#444A2B"},
-LspReferenceRead = {fg = "#5F865F", sp = "#FD9621", bold = true, undercurl = true},
-LspReferenceText = {fg = "#D7C484", bg = "#444A2B", sp = "#FD9621", bold = true, undercurl = true},
-LspReferenceWrite = {fg = "#5F865F", sp = "#FD9621", bold = true, undercurl = true},
-LspSignatureActiveParameter = {sp = "#FBEB9D", bold = true, italic = true, underline = true},
+LspReferenceRead = {fg = "#5F865F", sp = "#FD9621", underline = true},
+LspReferenceText = {fg = "#D7C484", bg = "#444A2B", sp = "#FD9621", underline = true},
+LspReferenceWrite = {fg = "#5F865F", sp = "#FD9621", underline = true},
+LspSignatureActiveParameter = {sp = "#FBEB9D", italic = true, underline = true},
 MasonError = {},
 MasonHeader = {fg = "#D7C484", bg = "#221F1C"},
 MasonHeading = {},
@@ -447,8 +447,8 @@ xmlTagName = {fg = "#77824A"},
 xmlString = {link = "xmlTagName"},
 ["@markup.link"] = {fg = "#77824A"},
 ["@punctuation.special"] = {fg = "#77824A"},
--- PATCH_CLOSE
--- content here will not be touched
+    -- PATCH_CLOSE
+    -- content here will not be touched
 }
 
 -- colorschemes generally want to do this
@@ -458,5 +458,5 @@ vim.cmd("let g:colors_name='darkearth'")
 
 -- apply highlight groups
 for group, attrs in pairs(colors) do
-  vim.api.nvim_set_hl(0, group, attrs)
+    vim.api.nvim_set_hl(0, group, attrs)
 end
