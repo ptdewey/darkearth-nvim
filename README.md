@@ -8,12 +8,12 @@
     <img src="assets/color_bar.png" alt="DarkEarth palette"/>
 </p>
 
-Based on [miasma.nvim](https://github.com/xero/miasma.nvim), but reimagined with earthier tones and more colorful syntax elements.
-Built with [lush](https://github.com/rktjmp/lush.nvim).
-
 <p align="center">
     <img src="assets/screenshot-0.png" alt="DarkEarth theme in neovim"/>
 </p>
+
+Based on [miasma.nvim](https://github.com/xero/miasma.nvim), but reimagined with earthier tones and more colorful syntax elements.
+Built with [lush](https://github.com/rktjmp/lush.nvim).
 
 
 ## Installation
