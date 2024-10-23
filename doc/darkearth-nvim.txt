@@ -8,8 +8,9 @@ Table of Contents                           *darkearth-nvim-table-of-contents*
   - Build or Modify                           |darkearth-nvim-build-or-modify|
   - Extras                                             |darkearth-nvim-extras|
 DarkEarthA dark and earthy colorscheme for Neovim.Based on miasma.nvim <https://github.com/xero/miasma.nvim>, but reimagined with
-earthier tones and more colorful syntax elements. Built with lush
-<https://github.com/rktjmp/lush.nvim>.
+earthier tones and more colorful syntax elements.
+
+Built with lush <https://github.com/rktjmp/lush.nvim>.
 
 
 INSTALLATION                                     *darkearth-nvim-installation*
