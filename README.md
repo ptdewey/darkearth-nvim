@@ -13,6 +13,7 @@
 </p>
 
 Based on [miasma.nvim](https://github.com/xero/miasma.nvim), but reimagined with earthier tones and more colorful syntax elements.
+
 Built with [lush](https://github.com/rktjmp/lush.nvim).
 
 
