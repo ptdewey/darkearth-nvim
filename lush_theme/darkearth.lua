@@ -445,13 +445,14 @@ local theme = lush(function(injected_functions)
         CmpItemKindUnit({ Keyword }),
 
         MiniTablineCurrent({ TabLineSel }),
-        MiniTablineHidden({ TabLineFill }),
+        MiniTablineHidden({ Normal }),
         MiniTablineVisible({ MiniTablineHidden }),
-        MiniTablineModifiedCurrent({ bg = colors.blueGreen, gui = "bold" }),
-        MiniTablineModifiedHidden({
-            bg = colors.lightBlack,
-            fg = colors.darkYellow,
+        MiniTablineModifiedCurrent({
+            bg = hsl(120, 17, 45),
+            fg = bgc,
+            gui = "bold",
         }),
+        MiniTablineModifiedHidden({ TabLineFill }),
         MiniTablineModifiedVisible({ MiniTablineModifiedHidden }),
         MiniJump2dSpot({ TabLineSel }),
     }
