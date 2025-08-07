@@ -443,6 +443,17 @@ local theme = lush(function(injected_functions)
         CmpItemKindKeyword({ Keyword }),
         CmpItemKindProperty({ Field }),
         CmpItemKindUnit({ Keyword }),
+
+        MiniTablineCurrent({ TabLineSel }),
+        MiniTablineHidden({ TabLineFill }),
+        MiniTablineVisible({ MiniTablineHidden }),
+        MiniTablineModifiedCurrent({ bg = colors.blueGreen, gui = "bold" }),
+        MiniTablineModifiedHidden({
+            bg = colors.lightBlack,
+            fg = colors.darkYellow,
+        }),
+        MiniTablineModifiedVisible({ MiniTablineModifiedHidden }),
+        MiniJump2dSpot({ TabLineSel }),
     }
 end)
 ---@diagnostic disable
