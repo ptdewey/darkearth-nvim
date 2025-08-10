@@ -197,7 +197,7 @@
 (ln "@text.diff.add" DiffAdd)
 (hl Added :fg (teal))
 (ln DiffAdded Added)
-(hl "@diff.plus" Added)
+(ln "@diff.plus" Added)
 (hl DiffChange :fg (altBg) :bg (diffChange))
 (ln "@text.diff.change" DiffChange)
 (hl Changed :fg (diffChange))
@@ -340,7 +340,7 @@
 (ln GitSignsChange Changed)
 (ln GitSignsDelete Removed)
 
-;; Convert to table
+;; Colorscheme setup
 (vim.cmd "highlight clear")
 (vim.cmd "set t_Co=256")
 (vim.cmd "let g:colors_name='darkearth'")

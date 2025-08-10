@@ -110,7 +110,7 @@ theme["DiffAdd"] = {bg = "#5F865F", fg = "#212121"}
 theme["@text.diff.add"] = {link = "DiffAdd"}
 theme["Added"] = {fg = "#5F865F"}
 theme["DiffAdded"] = {link = "Added"}
-theme["@diff.plus"] = {}
+theme["@diff.plus"] = {link = "Added"}
 theme["DiffChange"] = {bg = "#675642", fg = "#212121"}
 theme["@text.diff.change"] = {link = "DiffChange"}
 theme["Changed"] = {fg = "#675642"}

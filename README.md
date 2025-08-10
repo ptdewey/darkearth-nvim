@@ -41,7 +41,7 @@ vim.cmd.colorscheme("darkearth")
     - With `fennel`: Use `./build.sh` or `just build`
     - With `hotpot.nvim`: Builds are automatic upon saving `fnl/darkearth/init.fnl`
 
-Note: The version of darkearth made with [lush](https://github.com/rktjmp/lush.nvim) can be found on the [v1 branch](https://github.com/ptdewey/darkearth-nvim/tree/v2)
+Note: The version of darkearth made with [lush](https://github.com/rktjmp/lush.nvim) can be found on the [v1 branch](https://github.com/ptdewey/darkearth-nvim/tree/v1)
 
 ## Extras
 
