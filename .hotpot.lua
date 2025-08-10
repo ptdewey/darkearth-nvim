@@ -1,6 +1,11 @@
 return {
     build = {
         { atomic = false },
-        { "colors/*.fnl", true },
+        {
+            "fnl/darkearth/init.fnl",
+            function()
+                return "colors/darkearth.lua"
+            end,
+        },
     },
 }

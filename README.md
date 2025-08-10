@@ -12,10 +12,7 @@
     <img src="assets/screenshot-0.png" alt="DarkEarth theme in neovim"/>
 </p>
 
-Based on [miasma.nvim](https://github.com/xero/miasma.nvim), but reimagined with earthier tones and more colorful syntax elements.
-
-Built with [lush](https://github.com/rktjmp/lush.nvim).
-
+Based on [miasma.nvim](https://github.com/xero/miasma.nvim), reimagined with earthier tones and more colorful syntax elements.
 
 ## Installation
 
@@ -27,11 +24,9 @@ Lazy:
 },
 ```
 
-Packer:
+`vim.pack`:
 ```lua
-use {
-    "ptdewey/darkearth-nvim",
-}
+vim.pack.add({ "https://github.com/ptdewey/darkearth-nvim" })
 ```
 
 ## Usage
@@ -42,10 +37,13 @@ vim.cmd.colorscheme("darkearth")
 
 ## Build or Modify
 
-1. Ensure [lush.nvim](https://github.com/rktjmp/lush.nvim) and [shipwright.nvim](https://github.com/rktjmp/shipwright.nvim) are installed
-2. Modify [lush_theme/darkearth.lua](lush_theme/darkearth.lua)
-3. Rebuild the colorscheme using `./build.sh`
+1. [fennel](https://github.com/bakpakin/Fennel) or [hotpot.nvim](https://github.com/rktjmp/hotpot.nvim/tree/main) is installed
+2. Modify [fnl/darkearth/init.fnl](fnl/darkearth/init.fnl) as desired
+3. Rebuild the colorscheme 
+    - With `fennel`: Use `./build.sh` or `just build` ()
+    - With `hotpot.nvim`: Builds are automatic upon saving `fnl/darkearth/init.fnl`
 
+Note: The version of darkearth made with [lush](https://github.com/rktjmp/lush.nvim) can be found on the [v1 branch](https://github.com/ptdewey/darkearth-nvim/tree/v2)
 
 ## Extras
 

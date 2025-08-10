@@ -1,0 +1,344 @@
+(local theme {})
+
+(macro defcolor [name hex]
+  `(macro ,name [] ,hex))
+
+(defcolor fg "#D7C484")
+(defcolor bg "#24211E")
+(defcolor green "#77824A")
+(defcolor teal "#5F865F")
+(defcolor orange "#BB7844")
+(defcolor red "#B3664D")
+(defcolor op "#669977")
+(defcolor str "#B3854D")
+(defcolor cmt "#6E665E")
+(defcolor delim "#80744D")
+(defcolor altBg "#212121")
+(defcolor darkOrange "#B36B42")
+
+(defcolor darkGreen "#252F1E")
+(defcolor darkGreenAlt "#444A2B")
+(defcolor lightBrown "#463939")
+(defcolor diffChange "#675642")
+(defcolor nonText "#7A6D52")
+(defcolor indent "#252F1E")
+(defcolor tablineBg "#121212")
+(defcolor altLineNr "#736659")
+(defcolor ignore "#484441")
+(defcolor scroll "#6B6461")
+(defcolor visual "#3B3330")
+
+(defcolor diagnosticOk "#77824A")
+(defcolor diagnosticHint "#6E665E")
+(defcolor diagnosticInfo "#C9A654")
+(defcolor diagnosticWarn "#BB7844")
+(defcolor diagnosticError "#B3664D")
+
+(macro hl [name & attrs]
+  (let [attr-table {}]
+    (for [i 1 (length attrs) 2]
+      (tset attr-table (. attrs i) (. attrs (+ i 1))))
+    `(tset theme ,(tostring name) ,attr-table)))
+
+(macro ln [name target]
+  `(tset theme ,(tostring name) {:link ,(tostring target)}))
+
+;;
+;; Core groups
+;;
+
+;; Normal/Identifiers/Variables
+(hl Normal :fg (fg) :bg (bg))
+(ln Identifier Normal)
+(ln Variable Identifier)
+(ln "@variable" Variable)
+(ln "@lsp.type.parameter" Identifier)
+(ln "@lsp.type.property" Identifier)
+(ln "@lsp.type.variable" Identifier)
+(ln "@namespace" Identifier)
+(ln "@parameter" Identifier)
+(ln "@text.reference" Identifier)
+(ln DelimiterLight Normal)
+(ln "@punctuation.bracket" DelimiterLight)
+
+;; Statements/Keywords
+(hl Statement :fg (teal))
+(hl Keyword :fg (teal))
+(ln "@keyword" Keyword)
+(ln Conditional Statement)
+(ln Repeat Statement)
+(ln Label Statement)
+(ln Exception Statement)
+(ln PreProc Statement)
+(ln Include Statement)
+(ln Define Statement)
+(ln Macro Statement)
+(ln PreCondit Statement)
+(ln "@preproc" Preproc)
+
+;; Functions
+(hl Function :fg (green))
+(ln "@function" Function)
+(ln "@method" Function)
+(ln "@function.builtin" Function)
+(ln "@lsp.type.decorator" Function)
+(ln "@lsp.type.function" Function)
+(ln "@lsp.type.method" Function)
+
+;; Types
+(hl Type :fg (green))
+(ln Structure Type)
+(ln StorageClass Type)
+(ln Typedef Type)
+(ln "@type" Type)
+(ln "@lsp.type.type" Type)
+
+;; String
+(hl String :fg (str))
+(ln "@string" String)
+
+;; Numbers
+(hl Number :fg (red))
+(ln "@number" Number)
+(ln Float Number)
+(ln Boolean Number)
+(ln "@boolean" Boolean)
+
+;; Fields
+(hl Field :fg (orange))
+(ln "@field" Field)
+(ln "@property" Field)
+
+;; Constants
+(hl Constant :fg (orange))
+(ln Character Constant)
+(ln "@lsp.type.enumMember" Constant)
+(ln vimHiAttrib Constant)
+
+;; Comments
+(hl Comment :fg (cmt))
+(ln "@comment" Comment)
+(ln "@html.comment" Comment)
+(ln "@lsp.type.comment" Comment)
+(ln "@text.literal" Comment)
+(ln CtrlPLinePre Comment)
+(ln LspCodeLens Comment)
+
+;; Operators
+(hl Operator :fg (op))
+
+;; Delimiters
+(hl Delimiter :fg (delim))
+(ln NvimParenthesis Delimiter)
+(ln "@punctuation" Delimiter)
+
+;; Special
+(hl Special :fg (orange))
+(ln Debug Special)
+(ln SpecialChar Special)
+(ln SpecialComment Special)
+(ln Tag Special)
+(ln "@constant.builtin" Special)
+(ln "@constructor" Special)
+(ln "@punctuation.special" Special)
+
+;; Nontext
+(hl NonText :fg (nonText))
+(ln EndOfBuffer NonText)
+(ln Whitespace NonText)
+
+;; Cursor/Line Numbering
+(hl Visual :bg (visual))
+(hl Cursor :fg (altBg) :bg (fg))
+(hl CursorColumn :bg (bg))
+(ln CursorLine CursorColumn)
+(hl LineNr :fg (green))
+(hl LineNrAbove :fg (altLineNr))
+(ln LineNrBelow LineNrAbove)
+(ln CursorLineNr LineNr)
+(hl TermCursor :reverse true)
+
+;; Searching
+(hl Search :fg (altBg) :bg (teal))
+(ln CurSearch Search)
+(ln QuickFixLine Search)
+(ln Substitute Search)
+(hl IncSearch :fg (altBg) :bg (orange))
+
+;; Error messaging
+(hl Error :fg (fg) :bg (red))
+(hl ErrorMsg :fg (darkOrange))
+(hl WarningMsg :fg (darkOrange))
+(hl MoreMsg :fg (teal) :bold true)
+
+;; Text styling
+(hl Bold :bold true)
+(hl Italic :italic true)
+(hl Underlined :fg (green) :underline true)
+(ln "@text.underline" Underlined)
+(ln "@text.uri" Underlined)
+
+(hl Title :fg (darkOrange) :bold true)
+(ln "@text.title" Title)
+(ln FloatTitle Title)
+
+(hl ColorColumn :bg (bg))
+(hl MatchParen :fg (fg) :bg (lightBrown))
+
+(hl Folded :fg (darkOrange))
+(hl Ignore :fg (ignore))
+(ln Conceal Ignore)
+
+(ln SpecialKey Normal)
+(ln NvimSpacing Normal)
+
+;; Diffs
+(ln DiffText Visual)
+(hl DiffAdd :fg (altBg) :bg (teal))
+(ln "@text.diff.add" DiffAdd)
+(hl Added :fg (teal))
+(ln DiffAdded Added)
+(hl "@diff.plus" Added)
+(hl DiffChange :fg (altBg) :bg (diffChange))
+(ln "@text.diff.change" DiffChange)
+(hl Changed :fg (diffChange))
+(ln DiffChanged Changed)
+(ln "@diff.delta" Changed)
+(hl DiffDelete :fg (altBg) :bg (darkOrange))
+(ln "@text.diff.delete" DiffDelete)
+(hl Removed :fg (darkOrange))
+(ln DiffRemoved Removed)
+(ln "@diff.minus" Removed)
+
+; Pmenu
+(ln Pmenu Normal)
+(ln NormalFloat Pmenu)
+(ln PmenuExtra Pmenu)
+(ln PmenuKind Pmenu)
+(hl PmenuSbar :fg (scroll))
+(hl PmenuThumb :fg (fg) :bg (fg))
+(hl PmenuSel :fg (altBg) :bg (green))
+(ln PmenuExtraSel PmenuSel)
+(ln PmenuKindSel PmenuSel)
+
+; Statusline
+(hl StatusLine :fg (fg) :bg (bg) :bold true)
+(ln MsgSeparator StatusLine)
+(hl StatusLineNC :fg (altLineNr) :bg (bg) :bold true)
+
+;; Tabline
+(hl TabLine :fg (scroll) :bg (tablineBg))
+(hl TabLineFill :fg (str) :bg (bg))
+(hl TabLineSel :fg (tablineBg) :bg (green) :bold true)
+(hl TabLineSelSep :fg (green) :bg (bg) :bold true)
+(hl TabLineSep :fg (tablineBg) :bg (bg))
+
+;; File browsers
+(ln Directory Type)
+(ln netrwExe Changed)
+(ln netrwClassify Comment)
+
+;; Spellcheck
+(hl SpellBad :fg (diffChange) :sp (fg))
+(hl SpellCap :fg (teal) :sp (fg))
+(hl SpellLocal :fg (orange) :sp (fg))
+(hl SpellRare :fg (darkOrange) :sp (fg))
+
+;; Help files
+(ln helpSectionDelim Comment)
+(ln helpHyperTextEntry Statement)
+(ln helpExample String)
+(ln helpHeadline Title)
+(ln helpHyperTextJump Underlined)
+(ln helpURL Underlined)
+
+;; Diagnostics
+(hl DiagnosticDeprecated :sp (diffChange) :strikethrough true)
+(hl DiagnosticError :fg (diagnosticError))
+(ln DiagnosticErrorFloating DiagnosticError)
+(ln DiagnosticSignError DiagnosticError)
+(ln DiagnosticVirtualTextError DiagnosticError)
+(hl DiagnosticUnderlineError :underline true)
+(hl DiagnosticWarn :fg (diagnosticWarn))
+(ln DiagnosticFloatingWarn DiagnosticWarn)
+(ln DiagnosticSignWarn DiagnosticWarn)
+(ln DiagnosticVirtualTextWarn DiagnosticWarn)
+(hl DiagnosticUnderlineWarn :underline true)
+(hl DiagnosticHint :fg (diagnosticHint))
+(ln DiagnosticFloatingHint DiagnosticHint)
+(ln DiagnosticSignHint DiagnosticHint)
+(ln DiagnosticVirtualTextHint DiagnosticHint)
+(hl DiagnosticUnderlineHint :underline true)
+(hl DiagnosticInfo :fg (diagnosticInfo))
+(ln DiagnosticFloatingInfo DiagnosticInfo)
+(ln DiagnosticSignInfo DiagnosticInfo)
+(ln DiagnosticVirtualTextInfo DiagnosticInfo)
+(hl DiagnosticUnderlineInfo :underline true)
+(hl DiagnosticOk :fg (diagnosticOk))
+(ln DiagnosticFloatingOk DiagnosticOk)
+(ln DiagnosticSignOk DiagnosticOk)
+(ln DiagnosticVirtualTextOk DiagnosticOk)
+
+;; Todo comments
+(hl Todo :fg (bg) :bg (fg))
+(ln "@text.todo" Todo)
+
+;; Language overrides
+(ln htmlLink Underlined)
+(ln markdownBold Bold)
+(ln markdownItalic Italic)
+(ln "@markup.heading" Special)
+(ln "@markup.raw.block.markdown" Special)
+(ln "@markup.list" Operator)
+(hl "@markup.link" :fg (green) :underline true)
+(ln "@punctuation.special.markdown" Comment)
+
+;;
+;; Plugin groups
+;;
+
+;; Lazy
+(ln LazyNormal Normal)
+(hl LazyButtonActive :fg (altBg) :bg (green))
+(hl LazyH1 :fg (green))
+(hl LazyH2 :fg (green))
+(hl LazySpecial :fg (diagnosticInfo))
+
+;; Mason
+(ln MasonHeaderSecondary LazyButtonActive)
+(ln MasonHighlightBlock LazyButtonActive)
+
+;; Fzf-Lua
+(ln FzfLuaNormal Normal)
+(ln FzfLuaTitle Keyword)
+(ln FzfLuaBorder Type)
+(ln FzfLuaCursor Cursor)
+(ln FzfLuaCursorLine CursorLine)
+(ln FzfLuaCursorLineNr CursorLineNr)
+(ln FzfLuaSearch IncSearch)
+(ln FzfLuaScrollFloatEmpty PmenuSbar)
+(ln FzfLuaScrollFloatFull PmenuThumb)
+
+;; Mini.nvim
+(ln MiniTablineCurrent TabLineSel)
+(ln MiniTablineHidden Normal)
+(ln MiniTablineVisible MiniTablineHidden)
+(hl MiniTablineModifiedCurrent :fg (bg) :bg (teal) :bold true)
+(ln MiniTablineModifiedHidden TabLineFill)
+(ln MiniTablineModifiedVisible MiniTablineModifiedHidden)
+(ln MiniTablineTabpageSection IncSearch)
+(ln MiniJump2dSpot TabLineSel)
+
+;; Indent Blankline
+(hl IblIndent :fg (darkGreen))
+
+;; GitSigns (used by Lualine)
+(ln GitSignsAdd Added)
+(ln GitSignsChange Changed)
+(ln GitSignsDelete Removed)
+
+;; Convert to table
+(vim.cmd "highlight clear")
+(vim.cmd "set t_Co=256")
+(vim.cmd "let g:colors_name='darkearth'")
+(each [group attr (pairs theme)] (vim.api.nvim_set_hl 0 group attr))
