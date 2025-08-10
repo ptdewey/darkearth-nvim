@@ -12,8 +12,6 @@
     <img src="assets/screenshot-0.png" alt="DarkEarth theme in neovim"/>
 </p>
 
-Based on [miasma.nvim](https://github.com/xero/miasma.nvim), reimagined with earthier tones and more colorful syntax elements.
-
 ## Installation
 
 Lazy:
@@ -40,7 +38,7 @@ vim.cmd.colorscheme("darkearth")
 1. [fennel](https://github.com/bakpakin/Fennel) or [hotpot.nvim](https://github.com/rktjmp/hotpot.nvim/tree/main) is installed
 2. Modify [fnl/darkearth/init.fnl](fnl/darkearth/init.fnl) as desired
 3. Rebuild the colorscheme 
-    - With `fennel`: Use `./build.sh` or `just build` ()
+    - With `fennel`: Use `./build.sh` or `just build`
     - With `hotpot.nvim`: Builds are automatic upon saving `fnl/darkearth/init.fnl`
 
 Note: The version of darkearth made with [lush](https://github.com/rktjmp/lush.nvim) can be found on the [v1 branch](https://github.com/ptdewey/darkearth-nvim/tree/v2)
@@ -48,3 +46,10 @@ Note: The version of darkearth made with [lush](https://github.com/rktjmp/lush.n
 ## Extras
 
 I have also included a base16 colorscheme script [extras/base16-darkearth.sh](extras/base16-darkearth.sh) that can be used to set shell colors.
+
+## Inspiration
+
+- [miasma.nvim](https://github.com/xero/miasma.nvim) (What DarkEarth was originally forked from)
+- [Everforest](https://github.com/sainnhe/everforest)
+- [GruvBox](https://github.com/morhetz/gruvbox)
+

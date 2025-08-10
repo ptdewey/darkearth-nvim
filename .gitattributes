@@ -1,1 +1,3 @@
-colors/darkearth.lua linguist-generated
+colors/*.lua linguist-generated
+assets/*.sh linguist-generated
+extras/*.sh linguist-generated
