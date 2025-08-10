@@ -180,7 +180,6 @@
 
 (hl Title :fg (darkOrange) :bold true)
 (ln "@text.title" Title)
-(ln FloatTitle Title)
 
 (hl ColorColumn :bg (bg))
 (hl MatchParen :fg (fg) :bg (lightBrown))
@@ -210,9 +209,13 @@
 (ln DiffRemoved Removed)
 (ln "@diff.minus" Removed)
 
-; Pmenu
+;; Floating window
+(ln NormalFloat Normal)
+(hl FloatBorder :fg (green))
+(hl FloatTitle :fg (teal) :bold true)
+
+;; Pmenu
 (ln Pmenu Normal)
-(ln NormalFloat Pmenu)
 (ln PmenuExtra Pmenu)
 (ln PmenuKind Pmenu)
 (hl PmenuSbar :fg (scroll))
@@ -221,7 +224,7 @@
 (ln PmenuExtraSel PmenuSel)
 (ln PmenuKindSel PmenuSel)
 
-; Statusline
+;; Statusline
 (hl StatusLine :fg (fg) :bg (bg) :bold true)
 (ln MsgSeparator StatusLine)
 (hl StatusLineNC :fg (altLineNr) :bg (bg) :bold true)
@@ -310,8 +313,8 @@
 
 ;; Fzf-Lua
 (ln FzfLuaNormal Normal)
-(ln FzfLuaTitle Keyword)
-(ln FzfLuaBorder Type)
+(ln FzfLuaTitle FloatTitle)
+(ln FzfLuaBorder FloatBorder)
 (ln FzfLuaCursor Cursor)
 (ln FzfLuaCursorLine CursorLine)
 (ln FzfLuaCursorLineNr CursorLineNr)

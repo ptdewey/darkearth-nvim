@@ -98,7 +98,6 @@ theme["@text.underline"] = {link = "Underlined"}
 theme["@text.uri"] = {link = "Underlined"}
 theme["Title"] = {bold = true, fg = "#B36B42"}
 theme["@text.title"] = {link = "Title"}
-theme["FloatTitle"] = {link = "Title"}
 theme["ColorColumn"] = {bg = "#24211E"}
 theme["MatchParen"] = {bg = "#463939", fg = "#D7C484"}
 theme["Folded"] = {fg = "#B36B42"}
@@ -122,8 +121,10 @@ theme["@text.diff.delete"] = {link = "DiffDelete"}
 theme["Removed"] = {fg = "#B36B42"}
 theme["DiffRemoved"] = {link = "Removed"}
 theme["@diff.minus"] = {link = "Removed"}
+theme["NormalFloat"] = {link = "Normal"}
+theme["FloatBorder"] = {fg = "#77824A"}
+theme["FloatTitle"] = {bold = true, fg = "#5F865F"}
 theme["Pmenu"] = {link = "Normal"}
-theme["NormalFloat"] = {link = "Pmenu"}
 theme["PmenuExtra"] = {link = "Pmenu"}
 theme["PmenuKind"] = {link = "Pmenu"}
 theme["PmenuSbar"] = {fg = "#6B6461"}
@@ -195,8 +196,8 @@ theme["LazySpecial"] = {fg = "#C9A654"}
 theme["MasonHeaderSecondary"] = {link = "LazyButtonActive"}
 theme["MasonHighlightBlock"] = {link = "LazyButtonActive"}
 theme["FzfLuaNormal"] = {link = "Normal"}
-theme["FzfLuaTitle"] = {link = "Keyword"}
-theme["FzfLuaBorder"] = {link = "Type"}
+theme["FzfLuaTitle"] = {link = "FloatTitle"}
+theme["FzfLuaBorder"] = {link = "FloatBorder"}
 theme["FzfLuaCursor"] = {link = "Cursor"}
 theme["FzfLuaCursorLine"] = {link = "CursorLine"}
 theme["FzfLuaCursorLineNr"] = {link = "CursorLineNr"}
