@@ -13,7 +13,7 @@ jobs:
       - name: panvimdoc
         uses: kdheepak/panvimdoc@main
         with:
-          vimdoc: yankbank-nvim
+          vimdoc: darkearth-nvim
           version: "Neovim >= 0.7.0"
           demojify: true
           treesitter: true
