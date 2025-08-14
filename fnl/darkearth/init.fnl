@@ -172,6 +172,7 @@
 (hl ErrorMsg :fg (darkOrange))
 (hl WarningMsg :fg (darkOrange))
 (hl MoreMsg :fg (teal) :bold true)
+(hl ModeMsg :fg (green) :bold true)
 
 ;; Text styling
 (hl Bold :bold true)
