@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/ptdewey/darkearth-nvim/compare/v2.1.0...v2.2.0) (2025-08-15)
+
+
+### Features
+
+* `Question` hlgroup ([1044069](https://github.com/ptdewey/darkearth-nvim/commit/10440691dfb2e6be06818795fdc3b4bad0c425ba))
+
 ## [2.1.0](https://github.com/ptdewey/darkearth-nvim/compare/v2.0.1...v2.1.0) (2025-08-14)
 
 
