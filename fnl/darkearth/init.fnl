@@ -173,6 +173,7 @@
 (hl WarningMsg :fg (darkOrange))
 (hl MoreMsg :fg (teal) :bold true)
 (hl ModeMsg :fg (green) :bold true)
+(hl Question :fg (teal))
 
 ;; Text styling
 (hl Bold :bold true)

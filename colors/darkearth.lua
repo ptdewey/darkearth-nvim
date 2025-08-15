@@ -93,6 +93,7 @@ theme["ErrorMsg"] = {fg = "#B36B42"}
 theme["WarningMsg"] = {fg = "#B36B42"}
 theme["MoreMsg"] = {bold = true, fg = "#5F865F"}
 theme["ModeMsg"] = {bold = true, fg = "#77824A"}
+theme["Question"] = {fg = "#5F865F"}
 theme["Bold"] = {bold = true}
 theme["Italic"] = {italic = true}
 theme["Underlined"] = {fg = "#77824A", underline = true}
