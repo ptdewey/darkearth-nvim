@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.2.0](https://github.com/ptdewey/darkearth-nvim/compare/v2.1.0...v2.2.0) (2025-08-20)
+
+
+### Features
+
+* `Question` hlgroup ([1044069](https://github.com/ptdewey/darkearth-nvim/commit/10440691dfb2e6be06818795fdc3b4bad0c425ba))
+
+
+### Bug Fixes
+
+* lua treesitter property highlighting tweak to avoid change at lsp attach ([8ab7041](https://github.com/ptdewey/darkearth-nvim/commit/8ab7041133850f8b5d34f46f353918200dc40458))
+
 ## [2.1.0](https://github.com/ptdewey/darkearth-nvim/compare/v2.0.1...v2.1.0) (2025-08-14)
 
 
