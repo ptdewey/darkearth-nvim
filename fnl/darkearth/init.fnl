@@ -299,6 +299,7 @@
 (ln "@markup.list" Operator)
 (hl "@markup.link" :fg (green) :underline true)
 (ln "@punctuation.special.markdown" Comment)
+(ln "@property.lua" Normal)
 
 ;;
 ;; Plugin groups
@@ -344,8 +345,9 @@
 (ln GitSignsChange Changed)
 (ln GitSignsDelete Removed)
 
-;; Colorscheme setup
+; Colorscheme setup
 (vim.cmd "highlight clear")
 (vim.cmd "set t_Co=256")
-(vim.cmd "let g:colors_name='darkearth'")
+(set vim.g.colors_name :darkearth)
+(set vim.o.background :dark)
 (each [group attr (pairs theme)] (vim.api.nvim_set_hl 0 group attr))

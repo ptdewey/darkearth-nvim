@@ -191,6 +191,7 @@ theme["@markup.raw.block.markdown"] = {link = "Special"}
 theme["@markup.list"] = {link = "Operator"}
 theme["@markup.link"] = {fg = "#77824A", underline = true}
 theme["@punctuation.special.markdown"] = {link = "Comment"}
+theme["@property.lua"] = {link = "Normal"}
 theme["LazyNormal"] = {link = "Normal"}
 theme["LazyButtonActive"] = {bg = "#77824A", fg = "#212121"}
 theme["LazyH1"] = {fg = "#77824A"}
@@ -221,7 +222,8 @@ theme["GitSignsChange"] = {link = "Changed"}
 theme["GitSignsDelete"] = {link = "Removed"}
 vim.cmd("highlight clear")
 vim.cmd("set t_Co=256")
-vim.cmd("let g:colors_name='darkearth'")
+vim.g.colors_name = "darkearth"
+vim.o.background = "dark"
 for group, attr in pairs(theme) do
   vim.api.nvim_set_hl(0, group, attr)
 end
