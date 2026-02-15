@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-fennel --compile fnl/darkearth/init.fnl &> colors/darkearth.lua
-fennel --compile fnl/lightearth/init.fnl &> colors/lightearth.lua
+fennel --add-macro-path 'fnl/?.fnl' --compile fnl/darkearth/init.fnl &> colors/darkearth.lua
+fennel --add-macro-path 'fnl/?.fnl' --compile fnl/lightearth/init.fnl &> colors/lightearth.lua
