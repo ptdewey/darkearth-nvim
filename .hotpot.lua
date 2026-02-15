@@ -1,6 +1,6 @@
 return {
     build = {
-        { atomic = false },
+        { atomic = true },
         {
             "fnl/darkearth/init.fnl",
             function()
