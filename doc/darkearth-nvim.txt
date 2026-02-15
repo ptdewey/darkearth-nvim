@@ -1,11 +1,11 @@
-*darkearth-nvim.txt*      For Neovim >= 0.7.0      Last change: 2025 August 20
+*darkearth-nvim.txt*     For Neovim >= 0.7.0     Last change: 2026 February 15
 
 ==============================================================================
 Table of Contents                           *darkearth-nvim-table-of-contents*
 
   - Installation                                 |darkearth-nvim-installation|
   - Usage                                               |darkearth-nvim-usage|
-  - Buildor Modify                             |darkearth-nvim-buildor-modify|
+  - Build or Modify                           |darkearth-nvim-build-or-modify|
   - Extras                                             |darkearth-nvim-extras|
   - Inspiration                                   |darkearth-nvim-inspiration|
 DarkEarthA dark and earthy colorscheme for Neovim.
@@ -20,7 +20,7 @@ Lazy:
     },
 <
 
-`vim.pack`
+`vim.pack`:
 
 >lua
     vim.pack.add({ "https://github.com/ptdewey/darkearth-nvim" })
@@ -34,12 +34,12 @@ USAGE                                                   *darkearth-nvim-usage*
 <
 
 
-BUILDOR MODIFY                                 *darkearth-nvim-buildor-modify*
+BUILD OR MODIFY                               *darkearth-nvim-build-or-modify*
 
 1. fennel <https://github.com/bakpakin/Fennel> or hotpot.nvim <https://github.com/rktjmp/hotpot.nvim/tree/main> is installed
 2. Modify fnl/darkearth/init.fnl <fnl/darkearth/init.fnl> as desired
-3. Rebuild the colorscheme- With `fennel`Use `./build.sh` or `just build`
-- With `hotpot.nvim`Builds are automatic upon saving `fnl/darkearth/init.fnl`
+3. Rebuild the colorscheme- With `fennel`: Use `./build.sh` or `just build`
+- With `hotpot.nvim`: Builds are automatic upon saving `fnl/darkearth/init.fnl`
 
 
 
