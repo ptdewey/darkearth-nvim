@@ -182,6 +182,8 @@ theme["DiagnosticSignOk"] = {link = "DiagnosticOk"}
 theme["DiagnosticVirtualTextOk"] = {link = "DiagnosticOk"}
 theme["Todo"] = {bg = "#252F1E", fg = "#F0EBE1"}
 theme["@text.todo"] = {link = "Todo"}
+theme["TodoBgTODO"] = {bg = "#B8BE96", bold = true, fg = "#252F1E"}
+theme["TodoFgTODO"] = {fg = "#77824A"}
 theme["htmlLink"] = {link = "Underlined"}
 theme["markdownBold"] = {link = "Bold"}
 theme["markdownItalic"] = {link = "Italic"}
@@ -201,7 +203,8 @@ theme["MasonHighlightBlock"] = {link = "LazyButtonActive"}
 theme["FzfLuaNormal"] = {link = "Normal"}
 theme["FzfLuaTitle"] = {link = "FloatTitle"}
 theme["FzfLuaBorder"] = {link = "FloatBorder"}
-theme["FzfLuaCursor"] = {link = "Cursor"}
+theme["FzfLuaBackdrop"] = {fg = "#C2BAA8"}
+theme["FzfLuaCursor"] = {bg = "#77824A", fg = "#F5F0E6"}
 theme["FzfLuaCursorLine"] = {link = "CursorLine"}
 theme["FzfLuaCursorLineNr"] = {link = "CursorLineNr"}
 theme["FzfLuaSearch"] = {link = "IncSearch"}
