@@ -8,7 +8,9 @@ Table of Contents                           *darkearth-nvim-table-of-contents*
   - Build or Modify                           |darkearth-nvim-build-or-modify|
   - Extras                                             |darkearth-nvim-extras|
   - Inspiration                                   |darkearth-nvim-inspiration|
-DarkEarthA dark and earthy colorscheme for Neovim.
+DarkEarthA dark and earthy colorscheme for Neovim.DarkEarth also comes with a light variant, LightEarth.
+
+
 INSTALLATION                                     *darkearth-nvim-installation*
 
 Lazy:
@@ -30,20 +32,27 @@ Lazy:
 USAGE                                                   *darkearth-nvim-usage*
 
 >lua
+    -- DarkEarth
     vim.cmd.colorscheme("darkearth")
+    
+    -- LightEarth
+    vim.cmd.colorscheme("lightearth")
 <
 
 
 BUILD OR MODIFY                               *darkearth-nvim-build-or-modify*
 
 1. fennel <https://github.com/bakpakin/Fennel> or hotpot.nvim <https://github.com/rktjmp/hotpot.nvim/tree/main> is installed
-2. Modify fnl/darkearth/init.fnl <fnl/darkearth/init.fnl> as desired
-3. Rebuild the colorscheme- With `fennel`: Use `./build.sh` or `just build`
-- With `hotpot.nvim`: Builds are automatic upon saving `fnl/darkearth/init.fnl`
+2. Modify the source files as desired:- Shared highlight groups are defined in fnl/earth/macros.fnl <fnl/earth/macros.fnl>
+- Theme-specific colors and overrides are in fnl/darkearth/init.fnl <fnl/darkearth/init.fnl> and fnl/lightearth/init.fnl <fnl/lightearth/init.fnl>
+
+
+3. Rebuild the colorschemes- With `fennel`: Use `./build.sh` or `just build`
+- With `hotpot.nvim`: Builds are automatic upon saving
 
 
 
-Note: The version of darkearth made with lush
+Note: The version of darkearth built with lush
 <https://github.com/rktjmp/lush.nvim> can be found on the v1 branch
 <https://github.com/ptdewey/darkearth-nvim/tree/v1>
 
