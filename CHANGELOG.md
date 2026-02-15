@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.3.0](https://github.com/ptdewey/darkearth-nvim/compare/v2.2.0...v2.3.0) (2026-02-15)
+
+
+### Features
+
+* lightearth color scheme ([8448549](https://github.com/ptdewey/darkearth-nvim/commit/84485491655e08eaaf878d42a6626377f94b5a10))
+* move common groups to macro file ([c6d229e](https://github.com/ptdewey/darkearth-nvim/commit/c6d229e585feee23b3a7dd0ebb81ac7102b30d36))
+
 ## [2.2.0](https://github.com/ptdewey/darkearth-nvim/compare/v2.1.0...v2.2.0) (2025-08-20)
 
 
