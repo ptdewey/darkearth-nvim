@@ -292,6 +292,8 @@
 ;; Todo comments
 (hl Todo :fg (bg) :bg (fg))
 (ln "@text.todo" Todo)
+(hl TodoBgTODO :fg (fg) :bg (darkGreenAlt) :bold true)
+(hl TodoFgTODO :fg (green))
 
 ;; Language overrides
 (ln htmlLink Underlined)
@@ -323,7 +325,8 @@
 (ln FzfLuaNormal Normal)
 (ln FzfLuaTitle FloatTitle)
 (ln FzfLuaBorder FloatBorder)
-(ln FzfLuaCursor Cursor)
+(hl FzfLuaBackdrop :fg (nonText))
+(hl FzfLuaCursor :fg (altBg) :bg (green))
 (ln FzfLuaCursorLine CursorLine)
 (ln FzfLuaCursorLineNr CursorLineNr)
 (ln FzfLuaSearch IncSearch)
