@@ -1,0 +1,40 @@
+# WezTerm color scheme - DarkEarth
+# Add to your wezterm.lua: config.color_scheme = "DarkEarth"
+# Or place this file in ~/.config/wezterm/colors/darkearth.toml
+
+[colors]
+foreground = "#D7C484"
+background = "#24211E"
+cursor_fg = "#212121"
+cursor_bg = "#D7C484"
+cursor_border = "#D7C484"
+selection_fg = "#D7C484"
+selection_bg = "#3B3330"
+scrollbar_thumb = "#6B6461"
+split = "#77824A"
+
+ansi = [
+  "#24211E",  # black (background)
+  "#B3664D",  # red
+  "#5F865F",  # green (teal)
+  "#77824A",  # yellow (green)
+  "#BB7844",  # blue (orange)
+  "#B3854D",  # magenta (string)
+  "#669977",  # cyan (operator)
+  "#D7C484",  # white (foreground)
+]
+
+brights = [
+  "#6E665E",  # bright black (comment)
+  "#B36B42",  # bright red (dark orange)
+  "#5F865F",  # bright green (teal)
+  "#C9A654",  # bright yellow (diagnostic info)
+  "#BB7844",  # bright blue (orange)
+  "#80744D",  # bright magenta (delimiter)
+  "#669977",  # bright cyan (operator)
+  "#D7C484",  # bright white (foreground)
+]
+
+[metadata]
+name = "DarkEarth"
+author = "ptdewey"

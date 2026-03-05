@@ -1,0 +1,40 @@
+# WezTerm color scheme - LightEarth
+# Add to your wezterm.lua: config.color_scheme = "LightEarth"
+# Or place this file in ~/.config/wezterm/colors/lightearth.toml
+
+[colors]
+foreground = "#252F1E"
+background = "#F0EBE1"
+cursor_fg = "#F5F0E6"
+cursor_bg = "#252F1E"
+cursor_border = "#252F1E"
+selection_fg = "#252F1E"
+selection_bg = "#DCD4C6"
+scrollbar_thumb = "#6B6461"
+split = "#77824A"
+
+ansi = [
+  "#E6E0D6",  # black (tabline bg, used by tmux bar)
+  "#B3664D",  # red
+  "#5F865F",  # green (teal)
+  "#77824A",  # yellow (green)
+  "#BB7844",  # blue (orange)
+  "#B3854D",  # magenta (string)
+  "#669977",  # cyan (operator)
+  "#F0EBE1",  # white (background)
+]
+
+brights = [
+  "#A09890",  # bright black (comment)
+  "#B36B42",  # bright red (dark orange)
+  "#5F865F",  # bright green (teal)
+  "#9A8030",  # bright yellow (diagnostic info)
+  "#BB7844",  # bright blue (orange)
+  "#80744D",  # bright magenta (delimiter)
+  "#669977",  # bright cyan (operator)
+  "#F5F0E6",  # bright white (alt background)
+]
+
+[metadata]
+name = "LightEarth"
+author = "ptdewey"
