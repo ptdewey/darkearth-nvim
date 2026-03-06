@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.0](https://github.com/ptdewey/darkearth-nvim/compare/v2.3.0...v2.4.0) (2026-03-06)
+
+
+### Features
+
+* wezterm color schemes ([cb2d3e2](https://github.com/ptdewey/darkearth-nvim/commit/cb2d3e2d0cb27d1e31d746fe9d2b1bab9b06ac96))
+
 ## [2.3.0](https://github.com/ptdewey/darkearth-nvim/compare/v2.2.0...v2.3.0) (2026-02-15)
 
 
