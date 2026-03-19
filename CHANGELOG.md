@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.1](https://github.com/ptdewey/darkearth-nvim/compare/v2.4.0...v2.4.1) (2026-03-19)
+
+
+### Bug Fixes
+
+* tweak diff groups ([89e6ccf](https://github.com/ptdewey/darkearth-nvim/commit/89e6ccf33a2db246e60a6800909ab4c2d2fc041b))
+
 ## [2.4.0](https://github.com/ptdewey/darkearth-nvim/compare/v2.3.0...v2.4.0) (2026-03-06)
 
 
