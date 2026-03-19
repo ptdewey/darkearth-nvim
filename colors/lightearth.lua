@@ -218,9 +218,9 @@ do
   theme["GitSignsDelete"] = {link = "Removed"}
 end
 theme["Error"] = {bg = "#B3664D", fg = "#F5F0E6"}
-theme["DiffAdd"] = {bg = "#CCD8C4", fg = "#252F1E"}
-theme["DiffChange"] = {bg = "#D8CEBA", fg = "#252F1E"}
-theme["DiffDelete"] = {bg = "#D8C6BE", fg = "#252F1E"}
+theme["DiffAdd"] = {bg = "#CCD8C4"}
+theme["DiffChange"] = {bg = "#D8CEBA"}
+theme["DiffDelete"] = {bg = "#D8C6BE"}
 theme["FzfLuaBackdrop"] = {fg = "#C2BAA8"}
 theme["FzfLuaCursor"] = {bg = "#77824A", fg = "#F5F0E6"}
 theme["TodoBgTODO"] = {bg = "#B8BE96", bold = true, fg = "#252F1E"}

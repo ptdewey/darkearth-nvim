@@ -52,9 +52,9 @@
 
 ;; Theme-specific overrides
 (hl Error :fg (fg) :bg (red))
-(hl DiffAdd :fg (altBg) :bg (teal))
-(hl DiffChange :fg (altBg) :bg (diffChange))
-(hl DiffDelete :fg (altBg) :bg (darkOrange))
+(hl DiffAdd :bg (teal))
+(hl DiffChange :bg (diffChange))
+(hl DiffDelete :bg (darkOrange))
 (ln FzfLuaCursor Cursor)
 
 ; Colorscheme setup

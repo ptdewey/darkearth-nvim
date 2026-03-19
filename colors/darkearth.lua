@@ -218,9 +218,9 @@ do
   theme["GitSignsDelete"] = {link = "Removed"}
 end
 theme["Error"] = {bg = "#B3664D", fg = "#D7C484"}
-theme["DiffAdd"] = {bg = "#5F865F", fg = "#212121"}
-theme["DiffChange"] = {bg = "#675642", fg = "#212121"}
-theme["DiffDelete"] = {bg = "#B36B42", fg = "#212121"}
+theme["DiffAdd"] = {bg = "#5F865F"}
+theme["DiffChange"] = {bg = "#675642"}
+theme["DiffDelete"] = {bg = "#B36B42"}
 theme["FzfLuaCursor"] = {link = "Cursor"}
 vim.cmd("highlight clear")
 vim.cmd("set t_Co=256")

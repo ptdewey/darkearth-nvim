@@ -56,9 +56,9 @@
 
 ;; Theme-specific overrides
 (hl Error :fg (altBg) :bg (red))
-(hl DiffAdd :fg (fg) :bg (diffAddBg))
-(hl DiffChange :fg (fg) :bg (diffChangeBg))
-(hl DiffDelete :fg (fg) :bg (diffDeleteBg))
+(hl DiffAdd :bg (diffAddBg))
+(hl DiffChange :bg (diffChangeBg))
+(hl DiffDelete :bg (diffDeleteBg))
 (hl FzfLuaBackdrop :fg (nonText))
 (hl FzfLuaCursor :fg (altBg) :bg (green))
 (hl TodoBgTODO :fg (fg) :bg (darkGreenAlt) :bold true)
