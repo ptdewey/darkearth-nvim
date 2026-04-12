@@ -19,6 +19,9 @@
 (defcolor delim "#80744D")
 (defcolor altBg "#212121")
 (defcolor darkOrange "#B36B42")
+(defcolor diffAddBg "#2A3325")
+(defcolor diffChangeBg "#332E25")
+(defcolor diffDeleteBg "#352A25")
 
 (defcolor darkGreen "#252F1E")
 (defcolor darkGreenAlt "#444A2B")
@@ -52,9 +55,9 @@
 
 ;; Theme-specific overrides
 (hl Error :fg (fg) :bg (red))
-(hl DiffAdd :bg (teal))
-(hl DiffChange :bg (diffChange))
-(hl DiffDelete :bg (darkOrange))
+(hl DiffAdd :bg (diffAddBg))
+(hl DiffChange :bg (diffChangeBg))
+(hl DiffDelete :bg (diffDeleteBg))
 (ln FzfLuaCursor Cursor)
 
 ; Colorscheme setup
