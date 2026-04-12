@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.2](https://github.com/ptdewey/darkearth-nvim/compare/v2.4.1...v2.4.2) (2026-04-12)
+
+
+### Bug Fixes
+
+* fix darkearth diff group backgrounds to have legible text ([fc13468](https://github.com/ptdewey/darkearth-nvim/commit/fc1346889849063551152f9e64f1056820c41be9))
+
 ## [2.4.1](https://github.com/ptdewey/darkearth-nvim/compare/v2.4.0...v2.4.1) (2026-03-19)
 
 
