@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.0](https://github.com/ptdewey/darkearth-nvim/compare/v2.4.2...v2.5.0) (2026-06-03)
+
+
+### Features
+
+* change floating color to differ from background ([82a4949](https://github.com/ptdewey/darkearth-nvim/commit/82a49499aef477bf63bc8001e3e90be51bf3c5ef))
+
 ## [2.4.2](https://github.com/ptdewey/darkearth-nvim/compare/v2.4.1...v2.4.2) (2026-04-12)
 
 
