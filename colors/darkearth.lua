@@ -121,10 +121,10 @@ do
   theme["Removed"] = {fg = "#B36B42"}
   theme["DiffRemoved"] = {link = "Removed"}
   theme["@diff.minus"] = {link = "Removed"}
-  theme["NormalFloat"] = {bg = "#2E2925"}
+  theme["NormalFloat"] = {link = "Normal"}
   theme["FloatBorder"] = {fg = "#77824A"}
   theme["FloatTitle"] = {bold = true, fg = "#5F865F"}
-  theme["Pmenu"] = {link = "NormalFloat"}
+  theme["Pmenu"] = {bg = "#2E2925", fg = "#D7C484"}
   theme["PmenuExtra"] = {link = "Pmenu"}
   theme["PmenuKind"] = {link = "Pmenu"}
   theme["PmenuSbar"] = {fg = "#6B6461"}
