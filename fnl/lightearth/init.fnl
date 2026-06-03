@@ -30,6 +30,7 @@
 (defcolor ignore "#C8C0B6")
 (defcolor scroll "#6B6461")
 (defcolor visual "#DCD4C6")
+(defcolor floatBg "#E6E0D6")
 
 (defcolor diagnosticOk "#77824A")
 (defcolor diagnosticHint "#A09890")

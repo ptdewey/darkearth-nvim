@@ -140,11 +140,11 @@
      (ln DiffRemoved Removed)
      (ln "@diff.minus" Removed)
      ;; Floating window
-     (ln NormalFloat Normal)
+     (hl NormalFloat :bg (floatBg))
      (hl FloatBorder :fg (green))
      (hl FloatTitle :fg (teal) :bold true)
      ;; Pmenu
-     (ln Pmenu Normal)
+     (ln Pmenu NormalFloat)
      (ln PmenuExtra Pmenu)
      (ln PmenuKind Pmenu)
      (hl PmenuSbar :fg (scroll))
