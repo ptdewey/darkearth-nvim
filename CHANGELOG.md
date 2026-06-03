@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.1](https://github.com/ptdewey/darkearth-nvim/compare/v2.5.0...v2.5.1) (2026-06-03)
+
+
+### Bug Fixes
+
+* revert floatbg change ([bea7cc7](https://github.com/ptdewey/darkearth-nvim/commit/bea7cc7c6efc40be4e6b71a42098cfbc2a525c6e))
+
 ## [2.5.0](https://github.com/ptdewey/darkearth-nvim/compare/v2.4.2...v2.5.0) (2026-06-03)
 
 
